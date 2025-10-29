@@ -28,11 +28,11 @@ const Header = () => {
     <header className={`app-header ${isVisible ? "visible" : "hidden"}`}>
       <div className="hd-left">
         <Image
-          src="/dotlogo.svg"
+          src="/dotlogoblck.svg"
           alt="dotFitnessTracker Logo"
           className="hdlogo"
-          width={50}
-          height={50}
+          width={30}
+          height={30}
         />
         <h1 className="hdTitle">dotFitnessTracker</h1>
       </div>
@@ -42,6 +42,8 @@ const Header = () => {
         <Link href="/fitness" className="nav-link">Fitness</Link>
         <Link href="/nutrition" className="nav-link">Nutrition</Link>
         <Link href="/progress" className="nav-link">Progress</Link>
+        <Link href="/auth" className="signup-btn">Get Started</Link>
+
       </nav>
     </header>
   );
