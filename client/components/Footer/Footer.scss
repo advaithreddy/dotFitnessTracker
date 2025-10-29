@@ -1,0 +1,33 @@
+.app-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 16px;
+    .ftr_cntnt{
+        font-size: 0.688rem;
+        font-family: OpenSans-Regular;
+        color: var(--secondary-color);
+        display: flex;
+    }
+    
+    .ft_links{
+        font-size: 0.813rem;
+        font-family: OpenSans-Regular;
+        color: var(--secondary-color);
+        text-decoration: none;
+        padding: 0 5px;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .ftrLogo{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        display: inline-block;
+        vertical-align: middle;
+        width: 60px;
+        height: 15px;
+        margin-left: 0px;
+    }
+}

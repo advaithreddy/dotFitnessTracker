@@ -1,0 +1,61 @@
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 25px;
+  z-index: 1000;
+
+  /* Glassmorphism effect */
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  transition: top 0.4s ease, background 0.3s ease;
+
+  &.hidden {
+    top: -80px; /* hide navbar when scrolling down */
+  }
+
+  .hd-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .hdlogo {
+      width: 35px;
+      height: auto;
+    }
+
+    .hdTitle {
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 600;
+      border-left: 2px solid #4cff80;
+      padding-left: 12px;
+    }
+  }
+
+  .hd-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    .nav-link {
+      color: #ffffffb3;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.2s ease, transform 0.2s ease;
+
+      &:hover {
+        color: #4cff80;
+        transform: scale(1.05);
+      }
+    }
+  }
+}
